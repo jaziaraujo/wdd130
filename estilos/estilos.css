@@ -27,14 +27,10 @@ aside{
 }
 
 aside img{
-    width: 240px;
+    width: 200px;
     height: auto;
 }
 
-main img{
-    width: 150px;
-    height: auto;
-}
 p {
     padding: 0;
 }
@@ -55,7 +51,11 @@ h1 {
 
 }
 
-img {
+main{
+    max-width: none;
+}
+
+main img {
     width: 150px;
     height: auto;
     border: 1px solid rgb(209, 204, 204);
