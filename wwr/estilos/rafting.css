@@ -99,11 +99,12 @@ h1, p {
     background-color: var(--cor-destaque1);
     color: #fff;
     top: 230px;
+    float: right;
 }
 
 footer {
     background-color: var(--cor-primaria);
-    color: #fff;
+    color: var(--cor-destaque2);
     padding: 20px;
     display: flex;
     justify-content: space-between;
