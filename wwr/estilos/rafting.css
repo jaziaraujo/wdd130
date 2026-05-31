@@ -10,7 +10,7 @@
 
 header {
     background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
+    color: var(--cor-secundaria);
     align-items: center;
     padding: 10px;
 }
@@ -65,7 +65,7 @@ nav a {
 }
 
 
-#caixa {
+.hero article img {
     float: right;
     margin: 0 0 10px 15px;
     border: 1px solid;
@@ -89,6 +89,7 @@ h1 {
 h1, p {
     text-align: center;
 }
+
 .hero article {
     position: absolute;
     box-sizing: border-box;
@@ -99,7 +100,6 @@ h1, p {
     background-color: var(--cor-destaque1);
     color: #fff;
     top: 230px;
-    float: right;
 }
 
 footer {
