@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* LAYOUT GERAL */
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header img {
+    width: 120px;
+}
+
+/* NAVEGAÇÃO */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* TÍTULOS */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 2rem 0;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+
+    text-align: center;
+
+    background-color: rgba(27, 73, 101, 0.85);
+    color: white;
+
+    padding: 1rem;
+}
+
+/* ARTICLE SOBREPOSTO */
+
+.hero article {
+    position: absolute;
+
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+}
+
+.hero article p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* HISTÓRIA */
+
+.historia {
+    margin-top: 2rem;
+}
+
+.historia-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        220px
+        1fr;
+
+    gap: 1rem;
+
+    align-items: center;
+}
+
+.historia-grid img {
+    width: 100%;
+}
+
+.historia-grid p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* AVENTURAS */
+
+.aventuras {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.aventuras figure {
+    text-align: center;
+}
+
+.aventuras img {
+    width: 100%;
+    height: 120px;
+
+    object-fit: cover;
+
+    border: 1px solid #ccc;
+}
+
+.aventuras figcaption {
+    margin-top: .5rem;
+    font-size: .9rem;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    padding: 1rem;
+}
+
+/* REDES SOCIAIS */
+
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+.redes-sociais img {
+    width: 40px;
+    height: 40px;
+}
