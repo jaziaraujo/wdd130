@@ -1,5 +1,5 @@
 :root {
-  --cor-primaria: #1b4965;
+  --cor-primaria: #296991;
   --cor-secundaria: #62b6cb;
   --cor-destaque1: #264653;
   --cor-destaque2: #e9c46a;      
@@ -88,7 +88,7 @@ nav ul {
     height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 10px;
   width: 800px;
@@ -149,10 +149,12 @@ h1, p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .aventuras figure {
+    display: grid;
     text-align: center;
 }
 
